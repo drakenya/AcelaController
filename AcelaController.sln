@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2009
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcelaController", "AcelaController\AcelaController.csproj", "{98EF3C93-7D7D-46E7-8EE2-EE9B3D02C64F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98EF3C93-7D7D-46E7-8EE2-EE9B3D02C64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98EF3C93-7D7D-46E7-8EE2-EE9B3D02C64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98EF3C93-7D7D-46E7-8EE2-EE9B3D02C64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98EF3C93-7D7D-46E7-8EE2-EE9B3D02C64F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {772B4B8B-0763-43E2-A118-D1B9E806B249}
+	EndGlobalSection
+EndGlobal
