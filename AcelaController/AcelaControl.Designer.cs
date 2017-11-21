@@ -1,4 +1,4 @@
-﻿namespace AcelaController
+﻿namespace Drakenya.AcelaController
 {
     partial class AcelaControlForm
     {
@@ -71,6 +71,7 @@
             this.trkCab1Speed.Name = "trkCab1Speed";
             this.trkCab1Speed.Size = new System.Drawing.Size(180, 45);
             this.trkCab1Speed.TabIndex = 4;
+            this.trkCab1Speed.Scroll += new System.EventHandler(this.trkCab1Speed_Scroll);
             // 
             // trkCab1Inertia
             // 
@@ -79,6 +80,7 @@
             this.trkCab1Inertia.Name = "trkCab1Inertia";
             this.trkCab1Inertia.Size = new System.Drawing.Size(180, 45);
             this.trkCab1Inertia.TabIndex = 3;
+            this.trkCab1Inertia.Scroll += new System.EventHandler(this.trkCab1Inertia_Scroll);
             // 
             // rdoCab1Reverse
             // 
@@ -87,13 +89,14 @@
             this.rdoCab1Reverse.Name = "rdoCab1Reverse";
             this.rdoCab1Reverse.Size = new System.Drawing.Size(65, 17);
             this.rdoCab1Reverse.TabIndex = 2;
-            this.rdoCab1Reverse.TabStop = true;
             this.rdoCab1Reverse.Text = "Reverse";
             this.rdoCab1Reverse.UseVisualStyleBackColor = true;
+            this.rdoCab1Reverse.CheckedChanged += new System.EventHandler(this.rdoCab1Reverse_CheckedChanged);
             // 
             // rdoCab1Forward
             // 
             this.rdoCab1Forward.AutoSize = true;
+            this.rdoCab1Forward.Checked = true;
             this.rdoCab1Forward.Location = new System.Drawing.Point(112, 19);
             this.rdoCab1Forward.Name = "rdoCab1Forward";
             this.rdoCab1Forward.Size = new System.Drawing.Size(63, 17);
@@ -101,6 +104,7 @@
             this.rdoCab1Forward.TabStop = true;
             this.rdoCab1Forward.Text = "Forward";
             this.rdoCab1Forward.UseVisualStyleBackColor = true;
+            this.rdoCab1Forward.CheckedChanged += new System.EventHandler(this.rdoCab1Forward_CheckedChanged);
             // 
             // chkCab1Brake
             // 
@@ -111,6 +115,7 @@
             this.chkCab1Brake.TabIndex = 0;
             this.chkCab1Brake.Text = "Brake Engaged";
             this.chkCab1Brake.UseVisualStyleBackColor = true;
+            this.chkCab1Brake.CheckedChanged += new System.EventHandler(this.chkCab1Brake_CheckedChanged);
             // 
             // AcelaControlForm
             // 
@@ -121,6 +126,7 @@
             this.Controls.Add(this.btnStatus);
             this.Name = "AcelaControlForm";
             this.Text = "Acela Controller";
+            this.Load += new System.EventHandler(this.AcelaControlForm_Load);
             this.grpCab1.ResumeLayout(false);
             this.grpCab1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trkCab1Speed)).EndInit();
