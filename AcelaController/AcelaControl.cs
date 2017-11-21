@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AcelaController
 {
-    public partial class Form1 : Form
+    public partial class AcelaControlForm : Form
     {
-        public Form1()
+        public AcelaControlForm()
         {
             InitializeComponent();
         }
