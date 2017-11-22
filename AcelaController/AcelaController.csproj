@@ -45,7 +45,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Command/**/*.cs"></Compile>
+    <Compile Include="Acela\AcelaConnector.cs" />
+    <Compile Include="Acela\Command.cs" />
+    <Compile Include="Layout\State\Throttle.cs" />
+    <Compile Include="Layout\Control\*.cs" />
+    <Compile Include="Layout\*.cs" />
     <Compile Include="AcelaControl.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,5 +83,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
